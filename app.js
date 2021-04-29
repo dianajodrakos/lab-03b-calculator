@@ -13,8 +13,11 @@ evalButton.addEventListener ('click', () => {
     const number2 = input2.value;
     const operation = operationIn.value;
     const total = eval([input1.value] + [operationIn.value] + [input2.value]);
+        if (isNaN(total)){
+        totalOut.textContent = '☠'
+    } else {
     totalOut.textContent = total;
-
+    }
 });
 
 //
