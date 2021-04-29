@@ -4,10 +4,46 @@
     <meta charset=UTF-8>
     <meta http-equiv=X-UA-Compatible content=IE=edge>
     <meta name=viewport content=width=device-width, initial-scale=1.0>
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel=stylesheet href=./style.css>
 </head>
+
 <body>
+
+
+    <p>
+        <input type="text" id="add1"> +
+        <input type="text" id="add2">
+        <button id="add-calc">=</button>
+        <span id="add-total"></span>
+    </p>
+
+    <p>
+        <input type="text" id="sub1"> -
+        <input type="text" id="sub2">
+        <button id="sub-calc">=</button>
+        <span id="sub-total"></span>
+    </p>
+
+    <p>
+        <input type="text" id="div1"> /
+        <input type="text" id="div2">
+        <button id="div-calc">=</button>
+        <span id="div-total"></span>
+    </p>
+    <p>
+        <input type="text" id="mul1"> *
+        <input type="text" id="mul2">
+        <button id="mul-calc">=</button>
+        <span id="mul-total"></span>
+    </p>
+    <p>Number of times this calculator has:
+        <p>Added things: <span id="add-count">0</span></p>
+        <p>Subtracted things: <span id="sub-count">0</span></p>
+        <p>Divided things: <span id="div-count">0</span></p>
+        <p>Multiplied things: <span id="mul-count">0</span></p>
+        <p>Total things calculated: <span id="calc-count">0</span></p>
+    </p>
     <script type=module src=./app.js></script>
 </body>
 </html>
