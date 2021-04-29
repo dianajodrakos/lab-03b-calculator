@@ -9,41 +9,37 @@
 </head>
 
 <body>
-
-
-    <p>
-        <input type="text" id="add1"> +
-        <input type="text" id="add2">
-        <button id="add-calc">=</button>
-        <span id="add-total"></span>
-    </p>
-
-    <p>
-        <input type="text" id="sub1"> -
-        <input type="text" id="sub2">
-        <button id="sub-calc">=</button>
-        <span id="sub-total"></span>
-    </p>
-
-    <p>
-        <input type="text" id="div1"> /
-        <input type="text" id="div2">
-        <button id="div-calc">=</button>
-        <span id="div-total"></span>
-    </p>
-    <p>
-        <input type="text" id="mul1"> *
-        <input type="text" id="mul2">
-        <button id="mul-calc">=</button>
-        <span id="mul-total"></span>
-    </p>
-    <p>Number of times this calculator has:
-        <p>Added things: <span id="add-count">0</span></p>
-        <p>Subtracted things: <span id="sub-count">0</span></p>
-        <p>Divided things: <span id="div-count">0</span></p>
-        <p>Multiplied things: <span id="mul-count">0</span></p>
-        <p>Total things calculated: <span id="calc-count">0</span></p>
-    </p>
+    <div class="one">
+        <input type="text" id="num1" placeholder="0">
+    </div>
+    <div class="two">
+        <select name="calc" id="calc">
+            <option id="add-calc" value="+">+</option>
+            <option id="sub-calc" value="-">-</option>
+            <option id="div-calc" value="/">&#247;</option>
+            <option id="mul-calc"value="*">&#215;</option>
+        </select>
+    </div>
+    <div class="three">
+        <input type="text" id="num2" placeholder="0">
+    </div>
+    <div class="row-two">
+        <div class="four">
+            <button id="calc-total">=</button>
+        </div>
+        <div class="five">
+            <span id="total"></span>
+        </div>
+    </div>
+    <div class="row-three">
+        <p>Number of times this calculator has:
+            <p>Added things: <span id="add-count">0</span></p>
+            <p>Subtracted things: <span id="sub-count">0</span></p>
+            <p>Divided things: <span id="div-count">0</span></p>
+            <p>Multiplied things: <span id="mul-count">0</span></p>
+            <p>Total things calculated: <span id="calc-count">0</span></p>
+        </p>
+    </div>
     <script type=module src=./app.js></script>
 </body>
 </html>
